@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Build site.
-rm -rf blank-site
-mkdir blank-site
-cd blank-site
+rm -rf blank/
+mkdir blank
+cd blank
 echo "<a href='about.html'>About</a>" > index.html
 echo "About" > about.html
 
@@ -30,5 +30,5 @@ echo "$test" > cypress/integration/first_test.js
 
 npx cypress open
 
-# Quit server and remove folder.
+# Quit server
 kill -9 $PHP_SERVER_PID
