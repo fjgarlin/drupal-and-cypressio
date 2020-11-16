@@ -16,19 +16,10 @@ echo '{
     "baseUrl": "http://127.0.0.1:8888"
 }' > cypress.json
 npm install cypress --save-dev
-# TODO integrate tests in `assets` folder.
-test="
-describe('About page', () => {
-    it('Goes to about page', () => {
-        cy.visit('/')
-        cy.contains('Recipes').click()
-        cy.url().should('include', '/recipes')
-    })
-})
-"
+
+# Add tests from `assets` folder.
 mkdir cypress && mkdir cypress/integration
-touch cypress/integration/first_test.js
-echo "$test" > cypress/integration/first_test.js
+cp ../assets/* cypress/integration/
 
 npx cypress open
 
