@@ -12,6 +12,9 @@
 The provided scripts will run all the necessary commands to build the code used on the slides. 
 It assumes that some tools like `php`, `npm`, `drush`... are installed.
 
+Some scripts require sudo just to delete the generated folders as Drupal marks them as read-only after install.
+
 * Example one: `./blank-site.sh`
 * Example two: `./d7-site.sh` (requires [pygmy](https://pygmy.readthedocs.io/en/master/))
 * Example three: `./d8-site.sh`
+* Clean up generated files: `./clean-up.sh`
