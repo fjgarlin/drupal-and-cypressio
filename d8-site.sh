@@ -5,6 +5,7 @@ sudo rm -rf d8
 mkdir d8
 cd d8
 curl -sSL https://www.drupal.org/download-latest/tar.gz | tar -xz --strip-components=1
+# For specific version: https://ftp.drupal.org/files/projects/drupal-8.9.9.tar.gz
 
 # Site install needs more than 128M
 echo "
