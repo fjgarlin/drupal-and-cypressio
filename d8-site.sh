@@ -8,6 +8,7 @@ curl -sSL https://www.drupal.org/download-latest/tar.gz | tar -xz --strip-compon
 # For specific version: https://ftp.drupal.org/files/projects/drupal-8.9.9.tar.gz
 
 # Site install needs more than 128M
+composer require drush/drush
 echo "
 if (PHP_SAPI === 'cli') {
   ini_set('memory_limit', '512M');
@@ -27,7 +28,7 @@ cp ../assets/* cypress/integration/
 
 # Launch server.
 # php -d memory_limit=512M composer require drush/drush:^9
-drush -y si demo_umami --db-url=sqlite://sites/default/files/.ht.sqlite --account-pass=admin
+./vendor/bin/drush -y si demo_umami --db-url=sqlite://sites/default/files/.ht.sqlite --account-pass=admin
 nohup php -S localhost:8888 &
 PHP_SERVER_PID=$!
 
