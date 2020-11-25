@@ -14,8 +14,8 @@ docker-compose exec cli drush -y si
 echo "{}" > package.json
 npm install cypress --save-dev
 test="
-describe('About page', () => {
-    it('Goes to about page', () => {
+describe('Register page', () => {
+    it('Registers a new user', () => {
         cy.visit('http://drupal7-example.docker.amazee.io')
         cy.contains('Create new account').click()
         cy.url().should('include', '/register')

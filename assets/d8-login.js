@@ -1,5 +1,5 @@
 describe('The Login Page', () => {
-    it('sets auth cookie when logging in via form submission', function () {
+    it('Tests the login form', function () {
       cy.visit('/user/login')
       cy.get('input[name=name]').type('admin')
       cy.get('input[name=pass]').type('admin{enter}')
