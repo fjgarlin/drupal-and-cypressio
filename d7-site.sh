@@ -34,3 +34,4 @@ npx cypress open
 # Quit server
 docker-compose stop
 docker-compose down
+pygmy stop
