@@ -6,7 +6,7 @@ cd d7
 git clone https://github.com/amazeeio/drupal7-example.git .
 
 # Launch server.
-# pygmy up
+pygmy up
 docker-compose up -d
 docker-compose exec cli drush -y si
 
