@@ -32,6 +32,8 @@ cp ../assets/* cypress/integration/
 nohup php -S localhost:8888 &
 PHP_SERVER_PID=$!
 
+read -p "Press [Enter] to resume ..."
+
 npx cypress open
 
 # Quit server.

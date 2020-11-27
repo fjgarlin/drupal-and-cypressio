@@ -28,6 +28,8 @@ mkdir cypress && mkdir cypress/integration
 touch cypress/integration/first_test.js
 echo "$test" > cypress/integration/first_test.js
 
+read -p "Press [Enter] to resume ..."
+
 npx cypress open
 
 # Quit server

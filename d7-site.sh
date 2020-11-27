@@ -29,6 +29,8 @@ mkdir cypress && mkdir cypress/integration
 touch cypress/integration/user_register.js
 echo "$test" > cypress/integration/user_register.js
 
+read -p "Press [Enter] to resume ..."
+
 npx cypress open
 
 # Quit server
