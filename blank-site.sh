@@ -4,8 +4,8 @@
 rm -rf blank/
 mkdir blank
 cd blank
-echo "<a href='about.html'>About</a>" > index.html
-echo "About" > about.html
+echo "<h1>Homepage</h1><a href='about.html'>About</a>" > index.html
+echo "<h1>About page</h1>" > about.html
 
 # Launch server.
 nohup php -S localhost:2020 > phpd.log 2>&1 &
