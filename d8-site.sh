@@ -27,14 +27,12 @@ mkdir cypress && mkdir cypress/integration
 cp ../assets/* cypress/integration/
 
 # Launch server.
-# php -d memory_limit=512M composer require drush/drush:^9
 ./vendor/bin/drush -y si demo_umami --db-url=sqlite://sites/default/files/.ht.sqlite --account-pass=admin
 nohup php -S localhost:8888 &
-PHP_SERVER_PID=$!
 
 read -p "Press [Enter] to resume ..."
 
 npx cypress open
 
 # Quit server.
-kill -9 $PHP_SERVER_PID
+killall -9 php
