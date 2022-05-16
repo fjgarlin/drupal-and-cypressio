@@ -9,8 +9,8 @@
 
 ## Run the examples
 
-The provided scripts will run all the necessary commands to build the code used on the slides. 
-It assumes that some tools like `php`, `npm`, `drush`... are installed.
+The provided scripts will run all the necessary commands to build the code used on the slides.
+It assumes that some tools like `php`, `npm`, `composer`... are installed.
 
 Some scripts require sudo just to delete the generated folders as Drupal marks them as read-only after install.
 
