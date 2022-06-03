@@ -17,9 +17,13 @@ if (PHP_SAPI === 'cli') {
 
 # Install CypressIO and create first test.
 echo "{}" > package.json
-echo '{
-    "baseUrl": "http://localhost:8888"
-}' > cypress.json
+echo 'const { defineConfig } = require("cypress")
+module.exports = defineConfig({
+  e2e: {
+    baseUrl: "http://localhost:8888",
+    supportFile: false
+  }
+})' > cypress.config.js
 npm install cypress --save-dev
 
 # Add tests from `assets` folder.
