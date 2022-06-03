@@ -20,9 +20,9 @@ describe('Register page', () => {
     })
 })
 "
-mkdir cypress && mkdir cypress/integration
-touch cypress/integration/user_register.js
-echo "$test" > cypress/integration/user_register.js
+mkdir cypress && mkdir cypress/e2e
+touch cypress/e2e/user_register.cy.js
+echo "$test" > cypress/e2e/user_register.cy.js
 
 # Launch server.
 ./vendor/bin/drush -y si standard --db-url=sqlite://sites/default/files/.ht.sqlite --account-pass=admin

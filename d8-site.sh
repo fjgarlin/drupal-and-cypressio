@@ -23,8 +23,8 @@ echo '{
 npm install cypress --save-dev
 
 # Add tests from `assets` folder.
-mkdir cypress && mkdir cypress/integration
-cp ../assets/* cypress/integration/
+mkdir cypress && mkdir cypress/e2e
+cp ../assets/* cypress/e2e/
 
 # Launch server.
 ./vendor/bin/drush -y si demo_umami --db-url=sqlite://sites/default/files/.ht.sqlite --account-pass=admin

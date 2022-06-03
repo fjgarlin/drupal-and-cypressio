@@ -23,9 +23,9 @@ describe('About page', () => {
     })
 })
 "
-mkdir cypress && mkdir cypress/integration
-touch cypress/integration/first_test.js
-echo "$test" > cypress/integration/first_test.js
+mkdir cypress && mkdir cypress/e2e
+touch cypress/e2e/first_test.cy.js
+echo "$test" > cypress/e2e/first_test.cy.js
 
 read -p "Press [Enter] to resume ..."
 
