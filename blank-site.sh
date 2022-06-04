@@ -19,6 +19,7 @@ describe('About page', () => {
         cy.visit('http://localhost:2022')
         cy.contains('About').click()
         cy.url().should('include', '/about')
+        cy.get('body').should('not.contain', 'Not Found')
     })
 })
 "
