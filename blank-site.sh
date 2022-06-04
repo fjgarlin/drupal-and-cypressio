@@ -17,7 +17,6 @@ test="
 describe('About page', () => {
     it('Goes to about page', () => {
         cy.visit('http://localhost:2022')
-        //cy.visit('https://2022.drupalcamp.es')
         cy.contains('About').click()
         cy.url().should('include', '/about')
     })
