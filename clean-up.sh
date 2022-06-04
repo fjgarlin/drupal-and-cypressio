@@ -2,4 +2,4 @@
 
 rm -rf blank/
 sudo rm -rf d7/
-sudo rm -rf d8/
+sudo rm -rf drupal_latest/
